@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CV - Nguyễn Văn A</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 2rem;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      border-bottom: 1px solid #333;
+      padding-bottom: 1.5rem;
+    }
+    header img {
+      width: 120px;
+      border-radius: 50%;
+      border: 2px solid #444;
+    }
+    header .info h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    header .info p {
+      margin: 4px 0;
+      color: #aaa;
+    }
+    section {
+      margin-top: 2rem;
+    }
+    h2 {
+      border-left: 4px solid #03dac6;
+      padding-left: 10px;
+      color: #03dac6;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    .skills span {
+      display: inline-block;
+      background: #333;
+      padding: 6px 12px;
+      border-radius: 20px;
+      margin: 4px;
+      font-size: 0.9rem;
+    }
+    .project, .job {
+      margin-bottom: 1.2rem;
+    }
+    a {
+      color: #03a9f4;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="https://i.imgur.com/7k12EPD.png" alt="Avatar">
+      <div class="info">
+        <h1>Nguyễn Văn A</h1>
+        <p>Lập trình viên Fullstack</p>
+        <p>Email: nguyenvana@example.com | SĐT: 0123 456 789</p>
+        <p>Github: <a href="https://github.com/nguyenvana" target="_blank">github.com/nguyenvana</a></p>
+      </div>
+    </header>
+
+    <section>
+      <h2>Giới thiệu</h2>
+      <p>Tôi là một lập trình viên đam mê công nghệ, có kinh nghiệm xây dựng các hệ thống web fullstack, làm việc với Node.js, React và cơ sở dữ liệu quan hệ cũng như NoSQL.</p>
+    </section>
+
+    <section>
+      <h2>Kỹ năng</h2>
+      <div class="skills">
+        <span>HTML/CSS</span>
+        <span>JavaScript</span>
+        <span>React</span>
+        <span>Node.js</span>
+        <span>MongoDB</span>
+        <span>PostgreSQL</span>
+        <span>Docker</span>
+        <span>Git</span>
+        <span>Linux</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Kinh nghiệm</h2>
+      <div class="job">
+        <strong>CTY ABC - Lập trình viên Fullstack</strong> <br />
+        <em>01/2022 - Hiện tại</em>
+        <ul>
+          <li>Phát triển hệ thống quản lý nội bộ bằng React và Node.js</li>
+          <li>Tối ưu hiệu suất truy vấn PostgreSQL và MongoDB</li>
+          <li>Triển khai CI/CD với GitLab Runner và Docker</li>
+        </ul>
+      </div>
+      <div class="job">
+        <strong>Freelancer</strong><br />
+        <em>2019 - 2021</em>
+        <ul>
+          <li>Xây dựng website thương mại điện tử cho khách hàng tại Việt Nam</li>
+          <li>Bảo trì và nâng cấp ứng dụng web PHP, MySQL</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Dự án</h2>
+      <div class="project">
+        <strong>Hệ thống quản lý kho</strong> - <a href="#">Link demo</a><br />
+        <ul>
+          <li>Sử dụng MERN stack</li>
+          <li>Chức năng: quản lý sản phẩm, nhập/xuất kho, báo cáo tồn kho</li>
+        </ul>
+      </div>
+      <div class="project">
+        <strong>Blog cá nhân</strong> - <a href="#">Link github</a><br />
+        <ul>
+          <li>Xây dựng bằng Next.js, tích hợp Markdown editor</li>
+          <li>SEO tốt, load nhanh, responsive</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Học vấn</h2>
+      <p><strong>Đại học Công nghệ Thông tin - ĐHQG TPHCM</strong><br />
+        Kỹ sư phần mềm (2015 - 2019)
+      </p>
+    </section>
+
+    <section>
+      <h2>Liên hệ</h2>
+      <p>Email: nguyenvana@example.com | SĐT: 0123 456 789</p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/nguyenvana" target="_blank">linkedin.com/in/nguyenvana</a></p>
+    </section>
+  </div>
+</body>
+</html>
