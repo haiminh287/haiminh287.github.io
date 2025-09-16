@@ -1,0 +1,99 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.cv-container {
+  width: 800px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 20px;
+}
+
+.header img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #222;
+}
+
+.header h2 {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.contact p {
+  margin: 3px 0;
+  font-size: 14px;
+}
+
+section {
+  margin-top: 25px;
+}
+
+section h3 {
+  font-size: 18px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.project {
+  margin-bottom: 20px;
+  background-color: #f4f4f4;
+  padding: 0.5px 20px 0.5px 20px;
+}
+
+.project strong {
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.highlight {
+  font-weight: bold;
+}
+
+.btn-container {
+  text-align: center;
+  margin: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #6c63ff;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #5149d8;
+}

@@ -1,162 +1,256 @@
 <!DOCTYPE html>
-<html lang="vi">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CV - Nguyễn Văn A</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #121212;
-      color: #e0e0e0;
-      line-height: 1.6;
-    }
-    .container {
-      max-width: 960px;
-      margin: auto;
-      padding: 2rem;
-    }
-    header {
-      display: flex;
-      align-items: center;
-      gap: 2rem;
-      border-bottom: 1px solid #333;
-      padding-bottom: 1.5rem;
-    }
-    header img {
-      width: 120px;
-      border-radius: 50%;
-      border: 2px solid #444;
-    }
-    header .info h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-    header .info p {
-      margin: 4px 0;
-      color: #aaa;
-    }
-    section {
-      margin-top: 2rem;
-    }
-    h2 {
-      border-left: 4px solid #03dac6;
-      padding-left: 10px;
-      color: #03dac6;
-    }
-    ul {
-      padding-left: 1.2rem;
-    }
-    .skills span {
-      display: inline-block;
-      background: #333;
-      padding: 6px 12px;
-      border-radius: 20px;
-      margin: 4px;
-      font-size: 0.9rem;
-    }
-    .project, .job {
-      margin-bottom: 1.2rem;
-    }
-    a {
-      color: #03a9f4;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    @media (max-width: 600px) {
-      header {
-        flex-direction: column;
-        text-align: center;
-      }
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <header>
-      <img src="https://i.imgur.com/7k12EPD.png" alt="Avatar">
-      <div class="info">
-        <h1>Nguyễn Văn A</h1>
-        <p>Lập trình viên Fullstack</p>
-        <p>Email: nguyenvana@example.com | SĐT: 0123 456 789</p>
-        <p>Github: <a href="https://github.com/nguyenvana" target="_blank">github.com/nguyenvana</a></p>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CV - Nguyễn Hải Minh</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="cv-container" id="cv">
+      <!-- Header -->
+      <div class="header">
+        <img src="avatar.jpg" alt="Avatar" />
+        <div>
+          <h1>Nguyễn Hải Minh</h1>
+          <h2>Software Engineer</h2>
+          <div class="contact">
+            <p>📞 0877773505 | ✉️ minhhht2k4@gmail.com</p>
+            <p>🎂 15/05/2004</p>
+            <p>
+              🔗
+              <a href="https://github.com/haiminh287"
+                >https://github.com/haiminh287</a
+              >
+            </p>
+            <p>📍 Quang Trung, Ward 10, Go Vap, Hồ Chí Minh</p>
+          </div>
+        </div>
       </div>
-    </header>
 
-    <section>
-      <h2>Giới thiệu</h2>
-      <p>Tôi là một lập trình viên đam mê công nghệ, có kinh nghiệm xây dựng các hệ thống web fullstack, làm việc với Node.js, React và cơ sở dữ liệu quan hệ cũng như NoSQL.</p>
-    </section>
+      <!-- Summary -->
+      <section>
+        <h3>Summary</h3>
+        <p>
+          I am a third-year Computer Science student with a strong background in
+          web and app development. Proficient in ReactJS, React Native, Python
+          Django, and Java Spring MVC. I am proactive, eager to learn, and a
+          good team player, with a strong desire to apply my knowledge to
+          real-world projects in a professional environment.
+        </p>
+      </section>
 
-    <section>
-      <h2>Kỹ năng</h2>
-      <div class="skills">
-        <span>HTML/CSS</span>
-        <span>JavaScript</span>
-        <span>React</span>
-        <span>Node.js</span>
-        <span>MongoDB</span>
-        <span>PostgreSQL</span>
-        <span>Docker</span>
-        <span>Git</span>
-        <span>Linux</span>
-      </div>
-    </section>
+      <!-- Skills -->
+      <section>
+        <h3>Technical Skills</h3>
+        <p>
+          <span class="highlight">Web Developer:</span> Django, ReactJS, Java
+          Spring, MySQL, CI/CD, Flask, Git, GitHub, Postman, Terraform, AWS,
+          Firebase, Scrum, Jira, Kubernetes, Docker.
+        </p>
+        <p>
+          <span class="highlight">Mobile Developer:</span> React Native, Django,
+          Websocket, Android.
+        </p>
+        <p><span class="highlight">Other skills:</span> N8N, IoT.</p>
+      </section>
 
-    <section>
-      <h2>Kinh nghiệm</h2>
-      <div class="job">
-        <strong>CTY ABC - Lập trình viên Fullstack</strong> <br />
-        <em>01/2022 - Hiện tại</em>
-        <ul>
-          <li>Phát triển hệ thống quản lý nội bộ bằng React và Node.js</li>
-          <li>Tối ưu hiệu suất truy vấn PostgreSQL và MongoDB</li>
-          <li>Triển khai CI/CD với GitLab Runner và Docker</li>
-        </ul>
-      </div>
-      <div class="job">
-        <strong>Freelancer</strong><br />
-        <em>2019 - 2021</em>
-        <ul>
-          <li>Xây dựng website thương mại điện tử cho khách hàng tại Việt Nam</li>
-          <li>Bảo trì và nâng cấp ứng dụng web PHP, MySQL</li>
-        </ul>
-      </div>
-    </section>
+      <!-- Education -->
+      <section>
+        <h3>Education</h3>
+        <p>
+          <strong>Ho Chi Minh City Open University | 09/2022 - Present </strong>
+        </p>
+        <p><strong>Major: Computer Science</strong></p>
+      </section>
+      <section>
+        <h3>Projects</h3>
 
-    <section>
-      <h2>Dự án</h2>
-      <div class="project">
-        <strong>Hệ thống quản lý kho</strong> - <a href="#">Link demo</a><br />
-        <ul>
-          <li>Sử dụng MERN stack</li>
-          <li>Chức năng: quản lý sản phẩm, nhập/xuất kho, báo cáo tồn kho</li>
-        </ul>
-      </div>
-      <div class="project">
-        <strong>Blog cá nhân</strong> - <a href="#">Link github</a><br />
-        <ul>
-          <li>Xây dựng bằng Next.js, tích hợp Markdown editor</li>
-          <li>SEO tốt, load nhanh, responsive</li>
-        </ul>
-      </div>
-    </section>
+        <!-- Book Management System -->
+        <div class="project">
+          <p><strong>Project:</strong> Book Management System</p>
+          <p><strong>Time:</strong> 2 months, from October 2024</p>
+          <p>
+            <strong>Description:</strong> An online platform for managing and
+            selling books, supporting guest checkout (no login required) or user
+            account login. Integrated with MoMo e-wallet for payment.
+          </p>
+          <p><strong>Main Features:</strong></p>
+          <ul>
+            <li>
+              <strong>User:</strong> Add to cart, place orders, pay via MoMo,
+              receive confirmation via email.
+            </li>
+            <li>
+              <strong>Staff:</strong> Scan book codes, manage inventory,
+              update/cancel orders, send orders to delivery.
+            </li>
+            <li>
+              <strong>Admin:</strong> Manage users, books, and orders; generate
+              sales reports and statistics.
+            </li>
+            <li>
+              <strong>Shipper:</strong> Access system, receive and deliver
+              orders.
+            </li>
+          </ul>
+          <p>
+            <strong>GitHub:</strong>
+            <a href="https://github.com/haiminh287/ManagerBoookFinal"
+              >ManagerBoookFinal</a
+            >
+          </p>
+          <p>
+            <strong>Technologies:</strong> Python Flask, HTML, CSS, JavaScript,
+            MySQL
+          </p>
+        </div>
 
-    <section>
-      <h2>Học vấn</h2>
-      <p><strong>Đại học Công nghệ Thông tin - ĐHQG TPHCM</strong><br />
-        Kỹ sư phần mềm (2015 - 2019)
-      </p>
-    </section>
+        <!-- Accommodation Finder -->
+        <div class="project">
+          <p><strong>Project:</strong> Accommodation Finder</p>
+          <p><strong>Time:</strong> 2 months, from December 2024</p>
+          <p>
+            <strong>Description:</strong> A platform connecting tenants with
+            landlords. Users can search for rooms, post rental requests, or chat
+            in real time.
+          </p>
+          <p><strong>Main Features:</strong></p>
+          <ul>
+            <li>
+              <strong>User:</strong> Post rental requests, search for rooms,
+              chat with landlords in real time.
+            </li>
+            <li>
+              <strong>Landlord:</strong> Post listings, manage posts,
+              communicate with tenants.
+            </li>
+            <li><strong>Admin:</strong> Manage and moderate posts/content.</li>
+          </ul>
+          <p>
+            <strong>GitHub:</strong>
+            <a href="https://github.com/haiminh287/AccommodationMain"
+              >AccommodationMain</a
+            >
+          </p>
+          <p>
+            <strong>Technologies:</strong> Python Django, React Native,
+            Firebase, MySQL
+          </p>
+        </div>
 
-    <section>
-      <h2>Liên hệ</h2>
-      <p>Email: nguyenvana@example.com | SĐT: 0123 456 789</p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/nguyenvana" target="_blank">linkedin.com/in/nguyenvana</a></p>
-    </section>
-  </div>
-</body>
+        <!-- Student Training Point -->
+        <div class="project">
+          <p>
+            <strong>Project:</strong> Student Training Point Management System
+          </p>
+          <p><strong>Time:</strong> 2 months, from May 2025</p>
+          <p>
+            <strong>Description:</strong> A web-based system to manage and
+            evaluate students’ conduct scores. Students register for activities,
+            assistants manage participation, admins oversee the system.
+          </p>
+          <p><strong>Main Features:</strong></p>
+          <ul>
+            <li>
+              <strong>Student:</strong> Register for activities, comment, track
+              scores, chat with assistants.
+            </li>
+            <li>
+              <strong>Student Assistant:</strong> Create/manage activities,
+              verify participation, cancel activities.
+            </li>
+            <li>
+              <strong>Admin:</strong> Manage conduct scores, assign
+              roles/permissions.
+            </li>
+          </ul>
+          <p>
+            <strong>GitHub:</strong>
+            <a href="https://github.com/TNieAccStudy/EvaluationScoreManager"
+              >EvaluationScoreManager</a
+            >
+          </p>
+          <p>
+            <strong>Technologies:</strong> Java Spring MVC, ReactJS, MySQL,
+            Firebase
+          </p>
+        </div>
+        <div class="project">
+          <p><strong>Project:</strong> IoT-based Smart Parking System</p>
+          <p><strong>Time:</strong> 2 months, from July 2025</p>
+          <p>
+            <strong>Description:</strong> A smart parking solution integrating
+            IoT and web technologies. Users reserve spots online, check in via
+            QR/RFID, monitor via live cameras and interactive maps.
+          </p>
+          <p><strong>Main Features:</strong></p>
+          <ul>
+            <li>
+              <strong>User:</strong> Online booking/payment, QR check-in, live
+              monitoring, chatbot assistant.
+            </li>
+            <li><strong>Offline Guest:</strong> RFID card check-in/out.</li>
+            <li>
+              <strong>System:</strong> Vehicle recognition (YOLO), automated
+              monitoring, centralized data.
+            </li>
+            <li>
+              <strong>Admin:</strong> Manage parking lot, pricing, IoT devices,
+              camera feeds.
+            </li>
+          </ul>
+          <p>
+            <strong>GitHub:</strong>
+            <a href="https://github.com/haiminh287/smartparkinglot"
+              >SmartParkingLot</a
+            >
+          </p>
+          <p>
+            <strong>Technologies:</strong> IoT (ESP32, Arduino UNO, RFID),
+            Python Django, WebSocket, ReactJS, YOLO, OpenAI
+          </p>
+        </div>
+
+        <!-- Flask AWS Deployment -->
+        <div class="project">
+          <p>
+            <strong>Project:</strong> Flask App Deployment on AWS with Terraform
+          </p>
+          <p><strong>Time:</strong> 1 month, from April 2025</p>
+          <p>
+            <strong>Description:</strong> Demonstrates deploying a Flask web app
+            on AWS using Infrastructure as Code. Includes scalable and secure
+            architecture with automated provisioning.
+          </p>
+          <p><strong>Main Features:</strong></p>
+          <ul>
+            <li>
+              <strong>RDS Database:</strong> Automatically provisioned to store
+              app data.
+            </li>
+            <li>
+              <strong>Flask Hosting:</strong> Deployed on EC2 in private subnet.
+            </li>
+            <li>
+              <strong>ALB:</strong> Distributes traffic across EC2 instances.
+            </li>
+            <li>
+              <strong>Terraform Automation:</strong> Manages VPC, subnets, SGs,
+              EC2, RDS, ALB.
+            </li>
+          </ul>
+          <p>
+            <strong>GitHub:</strong>
+            <a href="https://github.com/haiminh287/DeployAppByCloudAWS"
+              >DeployAppByCloudAWS</a
+            >
+          </p>
+          <p>
+            <strong>Technologies:</strong> Python Flask, Terraform, AWS (EC2,
+            RDS, ALB, VPC, Security Groups)
+          </p>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
