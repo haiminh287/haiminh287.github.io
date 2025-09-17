@@ -57,6 +57,10 @@ section h3 {
   padding-bottom: 5px;
   margin-bottom: 10px;
 }
+section p {
+  margin: 2px 0;
+  line-height: 1.4;
+}
 
 ul {
   margin: 0;
@@ -64,7 +68,7 @@ ul {
 }
 
 .project {
-  margin-bottom: 20px;
+  margin-bottom: px;
   background-color: #f4f4f4;
   padding: 0.5px 20px 0.5px 20px;
 }
