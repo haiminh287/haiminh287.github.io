@@ -6,6 +6,7 @@ body {
   padding: 0;
   color: #333;
   line-height: 1.6;
+  font-size: 16px; /* mặc định dễ đọc */
 }
 
 .cv-container {
@@ -24,7 +25,7 @@ body {
   gap: 20px;
   border-bottom: 2px solid #e0e0e0;
   padding-bottom: 20px;
-  flex-wrap: wrap; /* tránh lỗi khi co nhỏ màn hình */
+  flex-wrap: wrap;
 }
 
 .header img {
@@ -33,7 +34,7 @@ body {
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #6c63ff;
-  flex-shrink: 0; /* tránh ảnh bị co méo */
+  flex-shrink: 0;
 }
 
 .header-info {
@@ -55,8 +56,8 @@ body {
 
 .contact p {
   margin: 3px 0;
-  font-size: 14px;
-  word-break: break-word; /* tránh text quá dài tràn ra ngoài */
+  font-size: 15px;
+  word-break: break-word;
 }
 
 /* ========== Sections ========== */
@@ -66,7 +67,6 @@ section {
 
 section h3 {
   font-size: 20px;
-  color: #6c63ff;
   border-bottom: 2px solid #ddd;
   padding-bottom: 6px;
   margin-bottom: 15px;
@@ -104,12 +104,11 @@ section p {
   display: inline-block;
   margin-top: 8px;
   text-decoration: none;
-  font-size: 20px;
-  color: #6c63ff;
+  color: #222;
   font-weight: bold;
   transition: 0.3s;
-  word-break: break-all; /* 👈 cho phép link dài tự xuống dòng */
-  font-size: 14px; /* đảm bảo chữ vừa vặn trên mobile */
+  word-break: break-all;
+  font-size: 16px;
 }
 
 .project a:hover {
@@ -142,11 +141,15 @@ section p {
   section h3 {
     font-size: 18px;
   }
+
+  .project a {
+    font-size: 15px; /* giữ vừa mắt */
+  }
 }
 
 @media (max-width: 480px) {
   body {
-    font-size: 14px;
+    font-size: 15px; /* không quá nhỏ */
   }
 
   .cv-container {
@@ -168,10 +171,14 @@ section p {
   }
 
   .contact p {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   section h3 {
     font-size: 16px;
+  }
+
+  .project a {
+    font-size: 14px; /* dễ đọc trên màn nhỏ */
   }
 }
